@@ -11,3 +11,31 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body{
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.player{
+    background: #666666;
+    max-width: 500px;
+    width: 100%;
+    ul{
+        background: black;
+        height: 100%;
+        max-height: 500px;
+        overflow-y: auto;
+        list-style: none;
+        color: white;
+        padding-left: 0;
+        li:not(:last-of-type){
+            border-bottom: 1px solid lightgray;
+        }
+    }
+}
